@@ -12,6 +12,6 @@ public class Scan {
 		String str = scan.next();
 		System.out.println(str);
 		
-		
+		scan.close();
 	}
 }
