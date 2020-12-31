@@ -12,5 +12,9 @@ public class Practice4 {
 			isOdd = "홀수";
 		}
 		System.out.printf("%d는 %s입니다.",num,isOdd);
+		
+		
+		
+		
 	}
 }
