@@ -5,12 +5,15 @@ import java.util.Scanner;
 public class Practice8 {
 	public static void main(String[] args) {
 		//월 입력
-		//3~5d월 : 봄,6~8월 :여름, 9~11월 : 가을, 12~1월: 겨울
+		//3~5월 : 봄, 6~8월 :여름, 9~11월 : 가을, 12~2월: 겨울
 		
 		Scanner scan = new Scanner(System.in);
 		int month = scan.nextInt();
 		String season;
 		scan.close();
+		
+		//String month = scan.next();
+		//int monthNum = Integer.parseInt(month);
 		if (month>=3&&month<=5) {	
 			season ="봄";
 		} else if(month>=6 && month<=8) {
@@ -22,6 +25,7 @@ public class Practice8 {
 		}
 		System.out.printf("%d월은 %s입니다.", month, season);
 		
+		//string으로 받았을때는 case "1": 로 표시
 		switch(month) {
 		case 3: case 4: case 5:
 			season = "봄";
@@ -37,6 +41,5 @@ public class Practice8 {
 			break;
 		}
 		System.out.printf("%d월은 %s입니다.", month, season);
-		
 	}
 }
